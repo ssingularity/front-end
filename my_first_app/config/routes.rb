@@ -3,5 +3,7 @@ Rails.application.routes.draw do
 
   get 'greeter/hello'   =>'greeter#hello'
   get 'greeter/goodbye'=>'greeter#goodbye'
+
+  root 'greeter#hello'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

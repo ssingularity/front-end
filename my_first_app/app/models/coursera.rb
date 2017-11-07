@@ -2,7 +2,7 @@ class Coursera
   include HTTParty
 
   default_options.update(verify: false)
-  base_uri 'https://api.coursera.org/courses'
+  base_uri 'https://api.coursera.org/api/catalog.v1/courses'
   default_params fields: "smallIcon,shortDescription", q: "search"
   format :json
 
